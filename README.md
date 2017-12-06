@@ -1,2 +1,2 @@
-# mandelbrot-
+# mandelbrot
 マンデルブロ集合
