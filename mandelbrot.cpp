@@ -108,15 +108,14 @@ void draw_area() {
 
 void display() {
     std::complex<double> c_plot;
-    glClearColor(0.2, 0.2, 1.0, 1.0);  // 消去色指定
-    glClear(GL_COLOR_BUFFER_BIT);      // 画面消去
+    glClearColor(0.2, 0.2, 1.0, 1.0);
+    glClear(GL_COLOR_BUFFER_BIT);
     draw_area();
-    glFlush();  // 画面出力
+    glFlush();
 }
 
 int main(int argc, char **argv) {
     glutInit(&argc, argv);
-    //glutInitDisplayMode(GLUT_RGB | GLUT_DOUBLE | GLUT_DEPTH);
     glutInitWindowSize(g_WindowWidth, g_WindowHeight);
     glutCreateWindow("Manderbrot Sets");
 
